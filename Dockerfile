@@ -7,6 +7,6 @@ RUN git clone https://github.com/microsoft/SEAL.git /tmp/SEAL
 WORKDIR /tmp/SEAL
 
 RUN cmake -S . -B build && cmake --build build && cmake --install build
-RUN pip3 install Pyfhel
+RUN pip3 install Pyfhel flask
 
 WORKDIR /home/clepios
