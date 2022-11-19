@@ -21,5 +21,5 @@ https://github.com/ibarrond/Pyfhel
 ```sh
 cd clepios/
 docker build -t clepios .
-docker run -it --rm -v $PWD:/app -w /app python3 heart_failure.py
+docker run -it --rm -v $PWD:/app -w /app clepios python3 heart_failure.py
 ```
