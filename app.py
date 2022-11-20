@@ -153,6 +153,10 @@ def decypher_result():
         'result': result[0]
     })
 
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+
 def main():
     app.run(debug=True)
 
