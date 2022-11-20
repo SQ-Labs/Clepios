@@ -7,9 +7,8 @@ Implémentation d'un algorithme de diagnostic médical, s'appliquant sur des don
 
 ## Features
 
-- Détection de la probabilité de crise cardiaque
-- Récupération de la moyenne de sommeil des patients
-
+- Détection de la probabilité de maladie cardiaque (données chiffées)
+- Calcul du % de body fat à partir de la taille et du poids (données chiffrées)
 
 ## Installation
 
@@ -21,5 +20,6 @@ https://github.com/ibarrond/Pyfhel
 ```sh
 cd clepios/
 docker build -t clepios .
-docker run -it --rm -v $PWD:/app -w /app clepios python3 heart_failure.py
+docker run -it --rm -p 5000:5000 clepios
+> server available at http://localhost:5000
 ```
